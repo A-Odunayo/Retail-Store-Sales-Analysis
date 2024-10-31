@@ -1,8 +1,23 @@
 # Retail Sales Analysis
 
 ## Project Overview
-
 This project involves a detailed analysis of sales data from a retail store. The goal is to identify top-selling products, assess regional performance, and uncover monthly sales trends. The findings are presented through an interactive Power BI dashboard with key visuals.
+
+## Table of Content
+
+- [Data Source](#Data-Source)
+
+- [Project Structure](#Project-Structure)
+
+- [Tools Used](#Tools-Used)
+
+- [Data Extraction, Transformation, and Loading](#Data-Extraction-Transformation-and-Loading)
+
+- [Data Analysis](#Data-Analysis)
+
+- [Data Visualization](#Data-Visualization)
+
+- [Instructions](#Instructions)
 
 ## Data Source
 
@@ -12,7 +27,7 @@ The dataset used for this analysis is ["the retail store's sales database"](http
 
 The project consists of three main components, each managed in Excel, SQL, and Power BI.
 
-### Tools and Technologies
+### Tools Used
 
 - **Excel**: Initial data exploration, including pivot tables and metric calculations.
 
@@ -46,21 +61,19 @@ Retail_Sales_Analysis/
 
 ## Data Cleaning and Preparation
 
-Before analysis, the data underwent several cleaning and preparation steps:
+Before analysis, the data underwent the cleaning and preparation steps below:
 
-1. **Handling Missing Values**: Identified and addressed missing values in key fields (e.g., sales amounts, product IDs).
-2. **Data Type Conversion**: Ensured that fields were in the correct format (e.g., converting date fields to Date format, numerical fields to Numeric format).
-3. **Removing Duplicates**: Checked for and removed any duplicate records in the dataset to ensure accuracy.
-4. **Outlier Detection**: Analyzed the data for outliers and anomalies, addressing them as necessary.
-5. **Data Transformation**: Created new calculated fields, such as total sales and revenue, to facilitate analysis.
+1. **Data Type Conversion**: Ensured that fields were in the correct format (e.g., converting date fields to Date format, numerical fields to Numeric format).
+2. **Removing Duplicates**: Checked for and removed any duplicate records in the dataset to ensure accuracy.
+3. **Data Transformation**: Created new calculated fields, such as Revenue, to facilitate analysis.
 
 ## Data Exploration
 
 The exploratory data analysis (EDA) phase included:
 
-1. **Descriptive Statistics**: Generated summary statistics (mean, median, mode, standard deviation) for numerical variables to understand distributions.
-2. **Data Visualizations**: Created initial visualizations (histograms, box plots) to identify patterns and trends in the data.
-3. **Correlations**: Examined correlations between different variables (e.g., sales vs. region, sales vs. product category) to identify relationships.
+1. **Descriptive Statistics**: Generated summary statistics for numerical variables to understand distributions.
+2. **Data Visualizations**: Created initial visualizations to identify patterns and trends in the data.
+3. **Correlations**: Examined correlations between different variables like sales vs. region, sales vs. product category etc to identify relationships.
 4. **Segment Analysis**: Analyzed data segments (e.g., by region, product category) to uncover insights and inform business decisions.
 
 ## Analysis Details
@@ -69,8 +82,8 @@ The exploratory data analysis (EDA) phase included:
 
 The **Excel** workbook includes:
 - **Pivot Tables**: Summarize total sales by product, region, and month.
-  - **Product Sales by Category**: 
-    ![Product Sales by Category](./screenshots/excel_sales_by_category.png)
+  - **Product Sales**: 
+    ![Product Sales](./screenshots/excel_sales_by_category.png)
   - **Regional Sales**:
     ![Regional Sales](./screenshots/excel_regional_sales.png)
   - **Monthly Sales Trends**:
@@ -137,12 +150,20 @@ The **Power BI** dashboard showcases key insights in an interactive, visual form
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/Retail_Sales_Analysis.git
-Open the Excel Workbook:
+
+2. Open the Excel Workbook:
 
 Explore Sales_Analysis.xlsx in the Excel folder for pivot tables, metrics, and visualizations.
-Run SQL Queries:
 
-Import the data into your SQL environment and execute the queries from the SQL folder. Export the results to Power BI if needed.
-Power BI Dashboard:
+3. Run SQL Queries:
+
+- Import the data into your SQL environment.
+
+- Execute the queries from the SQL folder. 
+
+- Export the results to Power BI if needed.
+
+4. Power BI Dashboard:
 
 Open Sales_Dashboard.pbix in Power BI to interact with and customize the dashboard visuals.
+
