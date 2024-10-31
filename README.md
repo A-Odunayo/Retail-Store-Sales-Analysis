@@ -6,7 +6,7 @@ This project involves a detailed analysis of sales data from a retail store. The
 
 ## Data Source
 
-The data for this analysis is sourced from ["the retail store's sales database"](https://github.com/A-Odunayo/Capstone-Project/blob/main/Sales%20Data.csv). It includes transactional data on sales, products, and customers, enabling comprehensive performance analysis.
+The dataset used for this analysis is ["the retail store's sales database"](https://github.com/A-Odunayo/Capstone-Project/blob/main/Sales%20Data.csv). It includes transactional data on sales, products, and customers, enabling comprehensive sales performance analysis.
 
 ## Project Structure
 
@@ -15,8 +15,16 @@ The project consists of three main components, each managed in Excel, SQL, and P
 ### Tools and Technologies
 
 - **Excel**: Initial data exploration, including pivot tables and metric calculations.
+
+  [Download here](https://microsoft-excel-2016.en.download.it/#google_vignette)
+  
 - **SQL**: Complex queries to retrieve and summarize targeted insights.
+
+  [Download here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+  
 - **Power BI**: Interactive dashboard to visually present insights.
+
+  [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
 
 ### Folder Structure
 Retail_Sales_Analysis/
