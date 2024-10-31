@@ -80,34 +80,50 @@ The exploratory data analysis (EDA) phase included:
 
 The **Excel** workbook includes:
 - **Pivot Tables**: Summarize total sales by product, region, and month.
-  - **Product Sales**: 
-    ![Sales by Product](./https://github.com/user-attachments/assets/3b35ce13-61b9-48f6-aa71-c1f96aa012b5)
 
-    ![Sales by Product](https://github.com/user-attachments/assets/3b35ce13-61b9-48f6-aa71-c1f96aa012b5)
-
-  - **Regional Sales**:
-    ![Regional Sales](./)
-  - **Monthly Sales Trends**:
-    ![Monthly Sales Trends](./)
+   | Product Sales | Regional Sales | Monthly Sales Trend |
+   |---------------|----------------|---------------------|
+   |![Sales by Product](https://github.com/user-attachments/assets/8ff91a9d-5969-4d01-b38e-6ac47ba76305)|![Sales by Region](https://github.com/user-attachments/assets/46829599-5bf3-4590-9748-9e6cb1938972)|![Sales per Month](https://github.com/user-attachments/assets/ba125d99-bfde-4fe5-a3eb-401ae0232645)
 
 - **Calculated Metrics**:
-  - Average sales per product.
-  - Total revenue by region.
-  - **Top Products**:
-    ![Top Products](./screenshots/excel_top_products.png)
+
+   | Average Sales Per Product | Top Products |
+   |---------------------------|-------------------|
+   |![Average Sales by Product](https://github.com/user-attachments/assets/3f2e8ca2-5579-4845-ad3c-cf8af40f5e3a)|![Top Products by Quantity Sold](https://github.com/user-attachments/assets/5ea1dcdf-2f81-493f-b26f-a49f76eaf0d7)|
 
 ### 2. SQL Queries
 
 The **SQL** queries aim to answer specific business questions:
-- **Total Sales by Product Category**: Product performance by category.
+- **Total Sales by Product Category**: Product performance by category in desending order.
+  ```SQL
+  Select [Product], sum(Revenue) as Total_Revenue from [dbo].[Sales Data]
+  Group by [Product]
+  Order by Total_Revenue desc
 - **Sales Transactions by Region**: Count of sales transactions per region.
+  ```SQL
+  Select Region, COUNT(*) as Transaction_Count 
+  From [dbo].[Sales Data] Group by Region
 - **Highest-Selling Product**: Product with the highest sales value.
-- **Total Revenue per Product**: Revenue by each product.
+  ```SQL
+  Select top 1 [Product], sum(Revenue) as Total_Revenue from [dbo].[Sales Data]
+  Group by [Product]
+  Order by Total_Revenue desc
 - **Monthly Sales Totals**: Monthly sales for the current year.
+  ```SQL
+  Select Datefromparts(Year(OrderDate), Month(OrderDate), 1) as Sales_Month, Sum(Revenue) as Monthly_Total  
+  From [dbo].[Sales Data]
+  Where Year(OrderDate) = Year(GETDATE())
+  Group by Datefromparts(Year(OrderDate), Month(OrderDate), 1)
+  Order by Sales_Month;
 - **Top 5 Customers by Purchase Amount**:
-  ![Top 5 Customers](./screenshots/sql_top_5_customers.png)
+  ```SQL
+  Select Top 5 CustomerId, Sum(Revenue) as Total_Purchase From [dbo].[Sales Data]
+  Group by CustomerId
+  Order by Total_Purchase Desc
 - **Sales Percentage by Region**: Each region's contribution to total sales.
+  ```SQL
 - **Products with No Sales in Last Quarter**: Products without sales in the last quarter.
+  ```SQL
 
 ### 3. Power BI Dashboard
 
@@ -123,7 +139,7 @@ The **Power BI** dashboard showcases key insights in an interactive, visual form
 
 ## Visualizations
 
-### Excel
+### Power BI Dashboard
 - **Pivot Table Visualizations**:
   - **Product Sales by Category**: A bar chart showing sales by product category.
   - **Regional Sales**: Heat map to display sales differences across regions.
@@ -140,7 +156,7 @@ The **Power BI** dashboard showcases key insights in an interactive, visual form
   - **Monthly Sales Totals**: Line or column chart for monthly sales tracking.
   - **Top 5 Customers**: Horizontal bar chart to represent top customers visually.
 
-### Power BI Dashboard
+
 - **Overview Cards**: KPI cards to show key metrics such as total sales, average sales, and revenue by region.
 - **Top-Performing Products**: Horizontal bar chart to rank products by sales.
 - **Regional Sales**: Map or stacked bar chart for regional performance insights.
