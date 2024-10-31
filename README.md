@@ -81,7 +81,7 @@ The exploratory data analysis (EDA) phase included:
 The **Excel** workbook includes:
 - **Pivot Tables**: Summarize total sales by product, region, and month.
   - **Product Sales**: 
-    ![Product Sales](./https://github.com/user-attachments/assets/3b35ce13-61b9-48f6-aa71-c1f96aa012b5)
+    ![Sales by Product](./https://github.com/user-attachments/assets/3b35ce13-61b9-48f6-aa71-c1f96aa012b5)
 
     ![Sales by Product](https://github.com/user-attachments/assets/3b35ce13-61b9-48f6-aa71-c1f96aa012b5)
 
