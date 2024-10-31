@@ -6,7 +6,7 @@ This project involves a detailed analysis of sales data from a retail store. The
 
 ## Data Source
 
-The data for this analysis is sourced from ["the retail store's sales database,"(https://github.com/A-Odunayo/Capstone-Project/blob/main/Sales%20Data.csv)]. It includes transactional data on sales, products, and customers, enabling comprehensive performance analysis.
+The data for this analysis is sourced from ["the retail store's sales database"](https://github.com/A-Odunayo/Capstone-Project/blob/main/Sales%20Data.csv). It includes transactional data on sales, products, and customers, enabling comprehensive performance analysis.
 
 ## Project Structure
 
