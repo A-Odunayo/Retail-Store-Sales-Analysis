@@ -9,8 +9,6 @@ This project involves a detailed analysis of sales data from a retail store. The
 
 - [Project Structure](#Project-Structure)
 
-- [Tools Used](#Tools-Used)
-
 - [Data Extraction, Transformation, and Loading](#Data-Extraction-Transformation-and-Loading)
 
 - [Data Analysis](#Data-Analysis)
@@ -21,7 +19,7 @@ This project involves a detailed analysis of sales data from a retail store. The
 
 ## Data Source
 
-The dataset used for this analysis is ["the retail store's sales database"](https://github.com/A-Odunayo/Capstone-Project/blob/main/Sales%20Data.csv). It includes transactional data on sales, products, and customers, enabling comprehensive sales performance analysis.
+The dataset used for this analysis is ["the retail store's sales data"](https://github.com/A-Odunayo/Capstone-Project/blob/main/Sales%20Data.csv). It includes transactional data on sales, products, and customers, enabling comprehensive sales performance analysis.
 
 ## Project Structure
 
@@ -42,10 +40,10 @@ The project consists of three main components, each managed in Excel, SQL, and P
   [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
 
 ### Folder Structure
-Retail_Sales_Analysis/
-├── Excel/
+Retail_Sales_Analysis
+├── Excel
 │   └── Sales_Analysis.xlsx               # Pivot tables, formulas, and exploratory analysis
-├── SQL/
+├── SQL
 │   ├── total_sales_by_category.sql       # Query for total sales by product category
 │   ├── transactions_by_region.sql        # Query for count of sales transactions by region
 │   ├── highest_selling_product.sql       # Query for highest-selling product by total sales value
@@ -54,10 +52,10 @@ Retail_Sales_Analysis/
 │   ├── top_5_customers.sql               # Query for top 5 customers by purchase amount
 │   ├── sales_percentage_by_region.sql    # Query to calculate percentage of total sales by region
 │   └── products_no_sales_last_quarter.sql # Query to identify products with no sales in the last quarter
-├── PowerBI/
+├── PowerBI
 │   └── Sales_Dashboard.pbix              # Power BI dashboard file for visual insights
-├── screenshots/                          # Folder for visual screenshots
 └── README.md                             # Project overview and instructions
+
 
 ## Data Cleaning and Preparation
 
@@ -83,11 +81,14 @@ The exploratory data analysis (EDA) phase included:
 The **Excel** workbook includes:
 - **Pivot Tables**: Summarize total sales by product, region, and month.
   - **Product Sales**: 
-    ![Product Sales](./screenshots/excel_sales_by_category.png)
+    ![Product Sales](./https://github.com/user-attachments/assets/3b35ce13-61b9-48f6-aa71-c1f96aa012b5)
+
+    ![Sales by Product](https://github.com/user-attachments/assets/3b35ce13-61b9-48f6-aa71-c1f96aa012b5)
+
   - **Regional Sales**:
-    ![Regional Sales](./screenshots/excel_regional_sales.png)
+    ![Regional Sales](./)
   - **Monthly Sales Trends**:
-    ![Monthly Sales Trends](./screenshots/excel_monthly_sales_trends.png)
+    ![Monthly Sales Trends](./)
 
 - **Calculated Metrics**:
   - Average sales per product.
