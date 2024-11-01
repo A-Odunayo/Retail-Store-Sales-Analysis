@@ -217,7 +217,7 @@ Below are the analysis result summary:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/A-Odunayo/Retail_Store_Sales_Analysis.git
+   git clone https://github.com/A-Odunayo/Retail-Store-Sales-Analysis.git
 
 2. Open the Excel Workbook:
 
