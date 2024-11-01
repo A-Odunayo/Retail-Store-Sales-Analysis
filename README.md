@@ -1,4 +1,4 @@
-# Retail Sales Analysis
+# Retail Store Sales Analysis
 
 ## Project Overview
 This project involves a detailed analysis of sales data from a retail store. The goal is to identify top-selling products, assess regional performance, and uncover monthly sales trends. The findings are presented through an interactive Power BI dashboard with key visuals.
@@ -25,13 +25,9 @@ This project involves a detailed analysis of sales data from a retail store. The
   
 - [Project Instructions](#Project-Instructions)
 
----
-
 ## Data Source
 
 The dataset used for this analysis is ["the retail store's sales data"](https://github.com/A-Odunayo/Capstone-Project/blob/main/Sales%20Data.csv). It includes transactional data on sales, products, and customers, enabling comprehensive sales performance analysis.
-
----
 
 ## Project Structure
 
@@ -51,25 +47,6 @@ The project consists of three main components, each managed in Excel, SQL, and P
 
   [Download here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
 
-### Folder Structure
-Retail_Sales_Analysis
-├── Excel
-│   └── Sales_Analysis.xlsx               # Pivot tables, formulas, and exploratory analysis
-├── SQL
-│   ├── total_sales_by_category.sql       # Query for total sales by product category
-│   ├── transactions_by_region.sql        # Query for count of sales transactions by region
-│   ├── highest_selling_product.sql       # Query for highest-selling product by total sales value
-│   ├── total_revenue_per_product.sql     # Query for total revenue per product
-│   ├── monthly_sales_totals.sql          # Query for monthly sales totals for the current year
-│   ├── top_5_customers.sql               # Query for top 5 customers by purchase amount
-│   ├── sales_percentage_by_region.sql    # Query to calculate percentage of total sales by region
-│   └── products_no_sales_last_quarter.sql # Query to identify products with no sales in the last quarter
-├── PowerBI
-│   └── Sales_Dashboard.pbix              # Power BI dashboard file for visual insights
-└── README.md                             # Project overview and instructions
-
----
-
 ## Data Cleaning and Preparation
 
 Before analysis, the data underwent the cleaning and preparation steps below:
@@ -77,8 +54,6 @@ Before analysis, the data underwent the cleaning and preparation steps below:
 1. **Data Type Conversion**: Ensured that fields were in the correct format (e.g., converting date fields to Date format, numerical fields to Numeric format).
 2. **Removing Duplicates**: I removed 40,079 duplicate records to prevent skewed results and ensure accuracy in my insights. This left me with 9,921 unique records that accurately reflect the necessary information for analysis. With this refined dataset, I can now deliver insights that are both reliable and actionable.
 3. **Data Transformation**: Created new calculated fields, such as Revenue, to facilitate analysis.
-
----
 
 ## Data Exploration
 
@@ -89,13 +64,12 @@ The exploratory data analysis (EDA) phase included:
 3. **Correlations**: Examined correlations between different variables like sales vs. region, sales vs. product category etc to identify relationships.
 4. **Segment Analysis**: Analyzed data segments (e.g., by region, product category) to uncover insights and inform business decisions.
 
----
-
 ## Analysis Details
 
-### 1. Excel
+### Excel
 
 The **Excel** workbook includes:
+
 - **Pivot Tables**: Summarize total sales by product, region, and month.
 
    | Product Sales | Regional Sales | Monthly Sales Trend |
@@ -108,7 +82,7 @@ The **Excel** workbook includes:
    |---------------------------|-------------------|
    |![Average Sales by Product](https://github.com/user-attachments/assets/3f2e8ca2-5579-4845-ad3c-cf8af40f5e3a)|![Top Products by Quantity Sold](https://github.com/user-attachments/assets/5ea1dcdf-2f81-493f-b26f-a49f76eaf0d7)|
 
-### 2. SQL Queries
+### SQL Queries
 
 The **SQL** queries aim to answer specific business questions:
 
@@ -151,8 +125,6 @@ The **SQL** queries aim to answer specific business questions:
     Select [Product] From [dbo].[Sales Data]
     Where Datepart(Quarter, OrderDate) = Datepart(Quarter, DATEADD(Quarter, -1, Getdate())) And Year(OrderDate) = Year(Dateadd(Quarter, -1, Getdate()))
     Group by [Product])
-  
----
 
 ## Power BI Dashboard (Visualizations)
 
@@ -188,8 +160,6 @@ The **Power BI** dashboard showcases key insights in an interactive, visual form
 - **Monthly Trends**: Visualization of sales trends over months.
   ![Monthly Trends](./screenshots/powerbi_monthly_trends.png)
 
----
-
 ## Results
 
 Below are the analysis result summary:
@@ -212,8 +182,6 @@ Below are the analysis result summary:
 
 5. Sales Contribution by Product and Region:
   - Shoes consistently perform well across regions, whereas lower-performing items (like Socks and Jackets) might benefit from bundling or targeted promotions in underperforming regions like the West.
-
----
 
 ## Recommendations
 
@@ -245,13 +213,11 @@ Below are the analysis result summary:
     further boost sales.
   - Identify the factors driving high performance in the South and apply similar strategies to other regions where applicable.
 
----
-
 ## Project Instructions
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/A-Odunayo/Retail_Sales_Analysis.git
+   git clone https://github.com/A-Odunayo/Retail_Store_Sales_Analysis.git
 
 2. Open the Excel Workbook:
 
