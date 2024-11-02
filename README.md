@@ -18,7 +18,7 @@ This project involves a detailed analysis of sales data from a retail store. The
   - [Excel](#Excel)
   - [SQL Queries](#SQL-Queries)
 
-- [Power BI Dashboard (Visualizations)](#Power-BI-Dashboard-(Visualizations))
+- [Power BI Dashboard (Visualizations)](#Power-BI-Dashboard-Visualizations)
 
 - [Recommendations](#Recommendations)
   
