@@ -127,11 +127,7 @@ The **SQL** queries aim to answer specific business questions:
 
 ## Power BI Dashboard (Visualizations)
 
-The **Power BI** dashboard below showcase the key insights below in an interactive, visual format:
-
-![Sales Visuals Overview](https://github.com/user-attachments/assets/0c20b7a2-2e0b-4116-a944-8057a367b7d7)
-
-![Product Analysis](https://github.com/user-attachments/assets/24ef2df7-ef2d-4081-a40e-059ef23a89f3)
+The **Power BI** dashboard consist of key insights as stated below:
 
 - **Bar charts** showing
 
@@ -143,6 +139,11 @@ The **Power BI** dashboard below showcase the key insights below in an interacti
 - **Pie Chart and Doughnut Chart** showing Region and Product Contribution to sales respectively
   
 - Lastly, **Cards, Slicers,** and **tables** showing different parameters
+
+![Sales Visuals Overview](https://github.com/user-attachments/assets/0c20b7a2-2e0b-4116-a944-8057a367b7d7)
+
+![Product Analysis](https://github.com/user-attachments/assets/24ef2df7-ef2d-4081-a40e-059ef23a89f3)
+
 
 ## Results
 
