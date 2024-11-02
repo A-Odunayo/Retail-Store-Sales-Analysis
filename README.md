@@ -9,7 +9,6 @@ This project involves a detailed analysis of sales data from a retail store. The
 
 - [Project Structure](#Project-Structure)
   - [Tools Used](#Tools-Used)
-  - [Folder Structure](#Folder-Structure)
 
 - [Data Cleaning and Preparation](#Data-Cleaning-and-Preparation)
 
