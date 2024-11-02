@@ -129,10 +129,11 @@ The **SQL** queries aim to answer specific business questions:
 
 The **Power BI** dashboard below showcase the key insights below in an interactive, visual format:
 
-[Sales Data Visualization.pdf](https://github.com/user-attachments/files/17607487/Sales.Data.Visualization.pdf)
+![Sales Visuals Overview](https://github.com/user-attachments/assets/0c20b7a2-2e0b-4116-a944-8057a367b7d7)
+
+![Product Analysis](https://github.com/user-attachments/assets/24ef2df7-ef2d-4081-a40e-059ef23a89f3)
 
 - **Bar charts** showing
-
 
   - *Product Sales*
   - *Regional Sales*
