@@ -138,7 +138,7 @@ The **Power BI** [Dashboard](https://github.com/user-attachments/files/17607372/
 
 - **Pie Chart and Doughnut Chart** showing Region and Product Contribution to sales respectively
   
-- Lastly, Cards, Slicer, and tables showing different parameters
+- Lastly, **Cards, Slicers,** and **tables** showing different parameters
 
 ## Results
 
