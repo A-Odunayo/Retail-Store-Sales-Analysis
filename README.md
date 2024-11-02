@@ -128,37 +128,18 @@ The **SQL** queries aim to answer specific business questions:
 
 ## Power BI Dashboard (Visualizations)
 
-The **Power BI** dashboard showcases key insights in an interactive, visual format:
+The **Power BI** [Dashboard](https://github.com/user-attachments/files/17607372/Sales.Data.Visualization.pdf) Showcase the key insights below in an interactive, visual format:
 
- - **Product Sales by Category**: A bar chart showing sales by product category.
-  - **Regional Sales**: Heat map to display sales differences across regions.
-  - **Monthly Sales Trends**: Line graph for monthly sales patterns.
+- **Bar charts** showing
 
-- **Calculated Metrics**:
-  - **Conditional Formatting**: Highlights high-performing regions and products.
-  - **Top Products**: Bar chart for easy comparison.
- 
-### SQL (for Power BI)
-- Export SQL query results into Power BI for advanced visualizations:
-  - **Total Sales by Product Category**: Pie chart for visualizing category proportions.
-  - **Sales Transactions by Region**: Map visual to display sales density by region.
-  - **Monthly Sales Totals**: Line or column chart for monthly sales tracking.
-  - **Top 5 Customers**: Horizontal bar chart to represent top customers visually.
+  - *Product Sales*
+  - *Regional Sales*
+  - *Monthly Sales*
+  - *Quantity Sold by Product*
 
-
-- **Overview Cards**: KPI cards to show key metrics such as total sales, average sales, and revenue by region.
-- **Top-Performing Products**: Horizontal bar chart to rank products by sales.
-- **Regional Sales**: Map or stacked bar chart for regional performance insights.
-- **Monthly Sales Trends**: Line chart to show trends across months interactively.
-
-- **Sales Overview**: Includes total sales and key performance metrics.
-  ![Sales Overview](./screenshots/powerbi_sales_overview.png)
-- **Top-Performing Products**: Highest-selling products by total sales.
-  ![Top-Performing Products](./screenshots/powerbi_top_products.png)
-- **Regional Breakdown**: Sales distribution by region.
-  ![Regional Breakdown](./screenshots/powerbi_regional_breakdown.png)
-- **Monthly Trends**: Visualization of sales trends over months.
-  ![Monthly Trends](./screenshots/powerbi_monthly_trends.png)
+- **Pie Chart and Doughnut Chart** showing Region and Product Contribution to sales respectively
+  
+- Lastly, Cards, Slicer, and tables showing different parameters
 
 ## Results
 
@@ -180,14 +161,12 @@ Below are the analysis result summary:
 4. Products with No Sales in Q4 2023:
   - Hats, Shirts, and Shoes had no sales in the last quarter of 2023, suggesting a possible seasonal trend, stock issues, or reduced customer interest during this period.
 
-5. Sales Contribution by Product and Region:
-  - Shoes consistently perform well across regions, whereas lower-performing items (like Socks and Jackets) might benefit from bundling or targeted promotions in underperforming regions like the West.
-
 ## Recommendations
 
 1. Focus on High-Selling Products:
   - Consider expanding the product lines for the top revenue-generating products (Shoes and Shirt) or introducing new variations and accessories to capture additional market share.
   - Socks and Jackets have lower revenue, suggesting a need for promotions or discounts to stimulate sales.
+  - Shoes consistently perform well across regions, whereas lower-performing items (like Socks and Jackets) might benefit from bundling or targeted promotions in underperforming regions like the West.
 
 2. Boost Sales in Low-Performing Regions:
   - The West region has the lowest sales share (14.29%). To drive growth, consider region-specific promotions, partnerships with local influencers, or a tailored marketing approach targeting 
@@ -198,32 +177,18 @@ Below are the analysis result summary:
   - February and January recorded high sales, possibly due to seasonal demand. Capitalize on these trends by introducing early-bird promotions or bundled offers in advance of peak months.
   - Monthly planning should include focused campaigns in January and February to maximize revenue potential during this period.
 
-4. Retain and Reward Top Customers:
-  - The top 5 customers contributed significantly to revenue, showing loyalty. Implement a customer loyalty program with exclusive discounts or early access to products for these key accounts to 
-    encourage repeat purchases.
-  - Use targeted marketing, such as personalized offers, to enhance the customer experience and drive higher spend from these valuable customers.
-
-5. Reassess Inventory for Underperforming Products:
-  - Hats, Shirts, and Shoes had no sales in Q4 2023, suggesting they may be seasonal or dependent on specific trends. Evaluate inventory levels and focus on products with consistent year-round 
-    demand to improve stock turnover and reduce holding costs.
-  - Consider launching a limited-time promotion or clearance sale for products with low turnover to free up inventory space.
-
-6. Leverage the South Region’s Sales Strength:
+4. Leverage the South Region’s Sales Strength:
   - With the South region contributing 44% of total sales, maintain high engagement here by tailoring campaigns to customer preferences. Regional promotions and high-visibility advertising could 
     further boost sales.
   - Identify the factors driving high performance in the South and apply similar strategies to other regions where applicable.
 
 ## Project Instructions
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/A-Odunayo/Retail-Store-Sales-Analysis.git
-
-2. Open the Excel Workbook:
+1. Open the Excel Workbook:
 
 Explore Sales_Analysis.xlsx in the Excel folder for pivot tables, metrics, and visualizations.
 
-3. Run SQL Queries:
+2. Run SQL Queries:
 
 - Import the data into your SQL environment.
 
@@ -231,9 +196,9 @@ Explore Sales_Analysis.xlsx in the Excel folder for pivot tables, metrics, and v
 
 - Export the results to Power BI if needed.
 
-4. Power BI Dashboard:
+3. Power BI Dashboard:
 
-Open Sales_Dashboard.pbix in Power BI to interact with and customize the dashboard visuals.
+- Create a dashboard that visualizes the insights found in Excel and SQL.
 
 🙂
 
